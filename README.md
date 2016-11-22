@@ -5,14 +5,13 @@ The objective of the project is to optimize [this portfolio](https://github.com/
 ### Website Running Instructions:
 
 * Open `index.html` in a web browser (Preferably Google.chrome)
-* This website is a template of Cameron Pittman's (Udacity tutor) portfolio. It showcases some of his projects and teaching work
+* This website is a template for simple portfolio developed by **Cameron Pittman** (_Udacity_ tutor). It showcases some of his projects and teaching work
 * They are provided as weblinks as follows:
   * Build your own 2048
   * Website Peformance Optimization
   * Mobile Web Development
   * Cam's Pizzeria
-
-* Out of these, Cam's pizzeria is having major functionality. It provides for ordering of Pizza with good features of animation
+* Out of these, **Cam's pizzeria** has major functionality. It provides for ordering of Pizzas with good features of animation
 
 ### What I did to achieve the objective of this project:
 
