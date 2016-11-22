@@ -23,7 +23,7 @@ The objective of the project is to optimize [this portfolio](https://github.com/
 * The number of pizzas to be displayed on the screen was made dynamical in `views/js/main.js`.
 * The pizza size function was modified in `views/js/main.js`.
 
-The output of page-speed insights and Average scripting time to generate last 10 frames are as follows:
+#### The output of page-speed insights and Average scripting time to generate last 10 frames are as follows:
 * [Scripting Time](https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/AVG-SCRIPTING-TIME-TO-GENERATE-LAST-10-FRAMES.png)
 * [PageSpeed Insights - Desktop](https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/pagespeed%20insight%20-%20Desktop.jpg)
 * [PageSpeed Insights - Mobile](https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/pagespeed%20insight%20-%20Mobile.jpg)
