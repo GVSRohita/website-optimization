@@ -421,33 +421,33 @@ var resizePizzas = function (size) {
 
     changeSliderLabel(size);
 
-  // Iterates through pizza elements on the page and changes their widths
-  // Using if/else statements instead of switch statements as personal preference
-  // Removed determineDX function since calculations were too time-consuming
-  // Instead we included only 3 possible pizza sizes foregoing the need for any dynamic calculations
-  // When user moves the slider to change the pizza size, function will loop through all
-  // pizzas in randomPizzaContainer and set their width by percentage stated
+    // Iterates through pizza elements on the page and changes their widths
+    // Using if/else statements instead of switch statements as personal preference
+    // Removed determineDX function since calculations were too time-consuming
+    // Instead we included only 3 possible pizza sizes foregoing the need for any dynamic calculations
+    // When user moves the slider to change the pizza size, function will loop through all
+    // pizzas in randomPizzaContainer and set their width by percentage stated
     var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
     function changePizzaSizes(size) {
-    if (size === 1) {
-      console.log("size 1 is small");
-      for (var i = 0; i < randomPizzas.length; i++) {
-        randomPizzas[i].style.width = '25%';
-      }
-    } else if (size === 2) {
-      console.log("size is 2 is medium");
-      for (var j = 0; j < randomPizzas.length; j++) {
-        randomPizzas[j].style.width = '33%';
-      }
-    } else if (size === 3) {
-      console.log("size is 3 is large");
-      for (var k = 0; k < randomPizzas.length; k++) {
-        randomPizzas[k].style.width = '50%';
-      }
-    } else {
-      console.log("bug in changePizzaSizes");
+        if (size === "1") {
+            console.log("size 1 is small");
+            for (var i = 0; i < randomPizzas.length; i++) {
+                randomPizzas[i].style.width = '25%';
+            }
+        } else if (size === "2") {
+            console.log("size is 2 is medium");
+            for (var j = 0; j < randomPizzas.length; j++) {
+                randomPizzas[j].style.width = '33%';
+            }
+        } else if (size === "3") {
+            console.log("size is 3 is large");
+            for (var k = 0; k < randomPizzas.length; k++) {
+                randomPizzas[k].style.width = '50%';
+            }
+        } else {
+            console.log("bug in changePizzaSizes");
+        }
     }
-  }
 
     changePizzaSizes(size);
 
@@ -497,18 +497,26 @@ function updatePositions() {
     window.performance.mark("mark_start_frame");
 
     var items = document.querySelectorAll('.mover');
+
     //moving dom request outside the loop to reduce the number of critical paths
     var currentScroll = document.body.scrollTop / 1250;
-    //declaration of the variable
-    var phase;
+
+    //declaration of the variable phase outside the for loop as an array 
+    var phase = [];
+
+    // Getting sin value for the five modulus values (optimized it based on first review)
+    for (var i = 0; i < 5; i++) {
+        phase.push((Math.sin(currentScroll + (i % 5))) * 100);
+    }
+
     // Calling the pizzaScroll function on requestAnimFrame method. This tells the browser
     // that the animation function will be called before the performing the next repaint.
     var pizzaScroll = function () {
-        for (var i = 0; i < items.length; i++) {
-            phase = Math.sin(currentScroll + (i % 5));
-            items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+        for (var i = 0, max = items.length; i < max; i++) {
+            items[i].style.left = items[i].basicLeft + phase[i % 5] + 'px';
         }
     };
+
     requestAnimationFrame(pizzaScroll);
 
     // User Timing API to the rescue again. Seriously, it's worth learning.
