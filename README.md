@@ -6,21 +6,16 @@ The objective of the project is to optimize [this portfolio](https://github.com/
 
 #### Page load speed optimization:
 
-* Image compression: Images were rescaled and resized to the final layout dimensions.
-* Inline CSS: Styles are inlined and applied to the document immediately instead
- of blocking loading. This was done using online compression techniques.
-* Defer alternative media CSS: A media attribute was added to print stylesheets
- to ensure that it would only be downloaded when printing.
-* Minifying CSS and JavaScript : All CSS and JavaScript files were minified
- _but not obfuscated_ to ensure faster downloading. The formatted and indented
- files are still present in their respective directories, without the
- `.min` extensions to their filenames.
+* Image compression: Images were rescaled and resized to suit to the final layout dimensions.
+* Inline CSS: Styles are inlined and applied to the document immediately, instead of render-blocking and loading. This was done using online compression techniques.
+* Defer alternative media CSS: A media attribute was added to print stylesheets to ensure that it would only be downloaded when printing.
+* Minifying CSS and JavaScript : All CSS and JavaScript files were minified _but not obfuscated_ to ensure faster downloading.
+* **Note:** Though minified, the original files are still present in the respective directories - without `.min` in the name - for study and clear understanding.
 
 #### Frame rate optimization
 
-* Unnecessary JavaScript operations were pulled out of for loops where possible,
- in `views/js/main.js`.
-* The number of pizzas to be displayed on the screen was made dynamical in `views/js/main.js`.
+* Unnecessary JavaScript operations were pulled out of for loops, whereever possible, in `views/js/main.js`.
+* The number of pizzas to be displayed on the screen was made dynamic in `views/js/main.js`.
 * The pizza size function was modified in `views/js/main.js`.
 
 #### The output of page-speed insights and Average scripting time to generate last 10 frames are as follows:
