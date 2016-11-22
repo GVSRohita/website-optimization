@@ -6,7 +6,7 @@ The objective of the project is to optimize [this portfolio](https://github.com/
 
 * Open `index.html` in a web browser (Preferably Google.chrome)
 * This website is a template for simple portfolio developed by **Cameron Pittman** (_Udacity_ tutor). It showcases some of his projects and teaching work
-* They are provided as weblinks as follows:
+* They are provided as _weblinks_ as follows:
   * Build your own 2048
   * Website Peformance Optimization
   * Mobile Web Development
