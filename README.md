@@ -2,17 +2,27 @@
 
 The objective of the project is to optimize [this portfolio](https://github.com/udacity/frontend-nanodegree-mobile-portfolio) for speed! The strategy, is to optimize the critical rendering path and make this page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
-### How to run:
+### Website Running Instructions:
 
-To get started, download the entire directory, **website optimization** and the follow these instructions:
+* Open index.html in a web browser (Preferably Google.chrome)
+* This website is a template of Cameron Pittman's (Udacity tutor) portfolio. It showcases some of his projects and teaching work
+* They are provided as weblinks as follows:
+- Build your own 2048
+- Website Peformance Optimization
+- Mobile Web Development
+- Cam's Pizzeria
+
+
+
+### What I did to achieve the objective of this project:
+
+* To get started, download the entire directory, **website optimization** and the follow these instructions:
 * Clone the _repo_ to your local machine
 * Launch a local http server to test. A simple way to do this on a Unix based OS is to open a terminal window, navigate to the directory of the project, and run a python command: **python -m SimpleHTTPServer 8080**
 * In the same directory, run the commend: **./ngrok http 8080** to access a secure public URL to the site
 * Copy the public URL given by **nrok** from the terminal window and paste it into your browser to view the site
 * Use _Google PageSpeed Insights_ to check the Google PageSeed score of the homepage
 * Capture a _timeline session_ while scrolling down the page of _pizza.html_ to check the framerate of this page
-
-### What I did to achieve the objective of this project:
 
 #### Page load speed optimization:
 
