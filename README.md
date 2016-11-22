@@ -26,6 +26,7 @@ The objective of the project is to optimize [this portfolio](https://github.com/
 The output of page-speed insights and Average scripting time to generate last 10 frames are as follows:
 (https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/AVG-SCRIPTING-TIME-TO-GENERATE-LAST-10-FRAMES.png)
 (https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/pagespeed%20insight%20-%20Desktop.jpg)
+(https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/pagespeed%20insight%20-%20Mobile.jpg)
 
 ##### The Resources used for this project:
 
