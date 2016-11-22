@@ -4,9 +4,8 @@ The objective of the project is to optimize [this portfolio](https://github.com/
 
 ### How to run:
 
-To get started, download the entire directory, **website optimization**, and run it in a browser. These are the following instructions to be followed:
+To get started, download the entire directory, **website optimization** and the follow these instructions:
 * Clone the _repo_ to your local machine
-* Open _index.html_ in the local browser
 * Launch a local http server to test. A simple way to do this on a Unix based OS is to open a terminal window, navigate to the directory of the project, and run a python command: **python -m SimpleHTTPServer 8080**
 * In the same directory, run the commend: **./ngrok http 8080** to access a secure public URL to the site
 * Copy the public URL given by **nrok** from the terminal window and paste it into your browser to view the site
