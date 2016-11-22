@@ -2,6 +2,10 @@
 
 The objective of the project is to optimize [this portfolio](https://github.com/udacity/frontend-nanodegree-mobile-portfolio) for speed! The strategy, is to optimize the critical rendering path and make this page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
+### How to run:
+
+To get started, download the entire directory, **website optimization**, and run it in a browser locally to achieve a page speed score of above 90 on desktop as well as mobile.
+
 ### What I did to achieve the objective of this project:
 
 #### Page load speed optimization:
