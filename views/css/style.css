@@ -33,6 +33,7 @@ form {
   position: fixed;
   width: 256px;
   /*z-index: -1;*/
+  /*previous line commented and bottom two lines added based on Udacity review*/
   -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
   backface-visibility: hidden;
 }
