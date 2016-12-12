@@ -1,43 +1,53 @@
-## Website Performance Optimization portfolio project
+Welcome to _My Neighborhood Map_ - by _G V Sri Rohita_
+========================================================
 
-The objective of the project is to optimize [this portfolio](https://github.com/udacity/frontend-nanodegree-mobile-portfolio) for speed! The strategy, is to optimize the critical rendering path and make this page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+## Basic Introduction:
+**My neighborhood map** displays the prominent places in _Visakhapatnam city in the province of Andhra Pradesh, India (my home city! )_. Do not forget to first visit [my link] (https://gvsrohita.github.io/Project_Pam/) in virtual world, if you are visiting this place in physical world. It is handy as well as helps you a lot in knowing everything about it. Not for nothing did I use _Wikipedia links!_ In addition, there is some more fun part too, which you would learn by reading further.
+
+### A brief overview (including Technical and Programming details) about my project:
+In my project, I have used `JavaScript`, `jQuery`, `KnockoutJS`, `Google Maps API` along with `Wikipedia API` (Third Party API) to display some of the famous places in and around Visakhapatnam city. I made this web-site fully responsive. It can run without any incovenience in Desktop, laptop, ipad and mobile phones.
 
 ### Website Running Instructions:
+- Open [my link] (https://gvsrohita.github.io/Project_Pam/) in **Google Chrome** or **Mozilla Firefox**
+- You will find a map of my home town _Visakhapatnam_ and the prominent places in and around it in the shape of _markers_
+- You can filter the places based on the part of name-string of the locations in the _input box_ with the tag _Filter places based on the name of location_
+- By clicking on any of the list items filtered or any of the many _markers_ that you see on the map, you can get information about that particular place, and also its **Streetview**, provided it is facilitated by Google
+- You can also get extra information about the place, you clicked, by further clicking on the _Relavant Wikipedia links_ that get populated, provided they are available in wikipedia, in the box provided with the heading _Wikipedia Links for the Chosen Location_
+- You can visit my Map on any handy device available near you, be it _Desktop/Laptop_, _iPad_ or _Mobile_
+- The **fun part** in this app is described below in detail
 
-* Open `index.html` in a web browser (Preferably Google.chrome)
-* This website is a template for simple portfolio developed by **Cameron Pittman** (_Udacity_ tutor). It showcases some of his projects and teaching work
-* They are provided as _weblinks_ as follows:
-  * Build your own 2048
-  * Website Peformance Optimization
-  * Mobile Web Development
-  * Cam's Pizzeria
-* Out of these, **Cam's pizzeria** has major functionality. It provides for ordering of Pizzas with good features of animation
+### The Fun Part:
+You can add your own locations (address, title and category of the location) to the map by following these steps:
+- Enter the Address, Name and Category (Drop down Box) of your location in the three boxes visible at the bottom (If they are not visible on the screen, then either scroll down or click `The Fun part!Click here to add your locations` button)
+- Then `Click` the button to see your location added on my map
+- Isn't it fun?!
 
 ### What I did to achieve the objective of this project:
+- I used html and css to create the basic web page index.html
+- I went for m-v-vm model for unobtrusive rendering of data from model(objects) to view (html) and vice-versa
+- The knockout.js is really wonderful in helping me achieve this requirement
+- The data-bind portion learnt from [tutorials, for example this link] (http://knockoutjs.com/documentation/foreach-binding.html) came very handy for me over here
+- The fundas about arrays and objects learnt while doing the previous projects [Online Resume] (https://gvsrohita.github.io/OnlineResume/) & [Classic Arcade Game Clone] (https://gvsrohita.github.io/Classic-Arcade-Game-Clone/) were put to good use over here to achieve the required objectives
+- Learnings I made while doing project [Portfolio Site] (https://gvsrohita.github.io/PortfolioSite/) especially in the area of making the site responsive were used here to good effect.
 
-* To get started, I downloaded the entire directory, **website optimization** and followed the below-mentioned methodology to optimize this web-site.
+#### Sources that helped me build my map:
+- [Google Maps API] (https://developers.google.com/maps/documentation/)
+- [Knockout JS] (http://knockoutjs.com/)
+- [Wikipedia API] (https://www.mediawiki.org/wiki/API:Main_page)
+- This list would be incomplete without the mention of [Stakeoverflow] (http://stackoverflow.com/) : There is not a single issue remained unresolved when I went to it. Especially for coding for _pausing_, _error messaging_ its contribution is immense
 
-#### Page load speed optimization:
+Thanks a lot for patiently reading this stuff! Now, it is time to visit my map [here] (https://gvsrohita.github.io/Project_Pam/)
 
-* Image compression: Images were rescaled and resized to suit to the final layout dimensions.
-* Inline CSS: Styles are inlined and applied to the document immediately, instead of render-blocking and loading. This was done using online compression techniques.
-* Defer alternative media CSS: A media attribute was added to print stylesheets to ensure that it would only be downloaded when printing.
-* Minifying CSS and JavaScript : All CSS and JavaScript files were minified _but not obfuscated_ to ensure faster downloading.
-* **Note:** Though minified, the original files are still present in the respective directories - without `.min` in the name - for study and clear understanding.
+#### The Screen-shots of the web-page from different media:
 
-#### Frame rate optimization
+##### Desktop screen-shot
+![Desktop screen-shot] (https://gvsrohita.github.io/Project_Pam/readme-images/README-IMAGE-1-DESKTOP.jpg)
 
-* Unnecessary JavaScript operations were pulled out of for loops, whereever possible, in `views/js/main.js`.
-* The number of pizzas to be displayed on the screen was made dynamic in `views/js/main.js`.
-* The pizza size function was modified in `views/js/main.js`.
+##### iPad screen-shot
+![iPad screen-shot] (https://gvsrohita.github.io/Project_Pam/readme-images/README-IMAGE-2-IPAD.jpg)
 
-#### The output of page-speed insights and Average scripting time to generate last 10 frames are as follows:
-* [Scripting Time](https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/AVG-SCRIPTING-TIME-TO-GENERATE-LAST-10-FRAMES.png)
-* [PageSpeed Insights - Desktop](https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/pagespeed%20insight%20-%20Desktop.jpg)
-* [PageSpeed Insights - Mobile](https://gvsrohita.github.io/website-optimization/SUPPORTING-DOCS/pagespeed%20insight%20-%20Mobile.jpg)
+##### Mobile-phone screen-shot
+![Mobile-phone screen-shot] (https://gvsrohita.github.io/Project_Pam/readme-images/README-IMAGE-3-MOBILE.jpg)
 
-##### The Resources used for this project:
+**HAPPY MAPPING!!!**
 
-* [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-* [Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery)
-* [Learner, Meaner, Faster Animations with requestAnimationFrame](https://www.html5rocks.com/en/tutorials/speed/animations/)
