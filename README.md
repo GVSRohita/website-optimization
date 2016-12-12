@@ -22,7 +22,7 @@ You can add your own locations (address, title and category of the location) to 
 - Then `Click` the button to see your location added on my map
 - Isn't it fun?!
 
-### What I did to achieve the objective of this project:
+### What I did to achieve the objectives of this project:
 - I used html and css to create the basic web page index.html
 - I went for m-v-vm model for unobtrusive rendering of data from model(objects) to view (html) and vice-versa
 - The knockout.js is really wonderful in helping me achieve this requirement
