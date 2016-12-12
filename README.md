@@ -8,7 +8,7 @@ Welcome to _My Neighborhood Map_ - by _G V Sri Rohita_
 In my project, I have used `JavaScript`, `jQuery`, `KnockoutJS`, `Google Maps API` along with `Wikipedia API` (Third Party API) to display some of the famous places in and around Visakhapatnam city. I made this web-site fully responsive. It can run without any incovenience in Desktop, laptop, ipad and mobile phones.
 
 ### Website Running Instructions:
-- Open [my link] (https://gvsrohita.github.io/Project_Pam/) in **Google Chrome** or **Mozilla Firefox**
+- Open [my link] (https://gvsrohita.github.io/Project_Pam/), preferably in **Google Chrome** or **Mozilla Firefox**
 - You will find a map of my home town _Visakhapatnam_ and the prominent places in and around it in the shape of _markers_
 - You can filter the places based on the part of name-string of the locations in the _input box_ with the tag _Filter places based on the name of location_
 - By clicking on any of the list items filtered or any of the many _markers_ that you see on the map, you can get information about that particular place, and also its **Streetview**, provided it is facilitated by Google
